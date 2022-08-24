@@ -2,7 +2,7 @@ package GenericLibrary;
 
 /**
  * This will store all the constants
- * @author Chaitra M
+ * @author chetan
  *
  */
 public interface ConstantsLibrary {

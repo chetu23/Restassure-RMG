@@ -9,10 +9,49 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1,581</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,201</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">EndToEndScenario.CreateProjectGetAndVerifyInDB</td><td><a href="#m0">createP</a></td><td rowspan="1">1657539733638</td><td rowspan="1">1561</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Rmg_Api.DeleteProjectTest</td><td><a href="#m0">deleteP</a></td><td rowspan="1">1661154335843</td><td rowspan="1">121</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Rmg_Api.CreateProjectGetAndVerifyInDB</td><td><a href="#m1">createP</a></td><td rowspan="1">1661154331992</td><td rowspan="1">3229</td></tr><tr class="passedodd"><td rowspan="1">Rmg_Api.CreateProjectTest</td><td><a href="#m2">createProjectTest</a></td><td rowspan="1">1661154335243</td><td rowspan="1">127</td></tr><tr class="passedeven"><td rowspan="1">Rmg_Api.CreateProjectUisngJSONOBect</td><td><a href="#m3">createP</a></td><td rowspan="1">1661154335379</td><td rowspan="1">102</td></tr><tr class="passedodd"><td rowspan="1">Rmg_Api.CreateProjectUsingHashmap</td><td><a href="#m4">createP</a></td><td rowspan="1">1661154335483</td><td rowspan="1">122</td></tr><tr class="passedeven"><td rowspan="1">Rmg_Api.CreateProjectUsingJSONFile</td><td><a href="#m5">createP</a></td><td rowspan="1">1661154335608</td><td rowspan="1">129</td></tr><tr class="passedodd"><td rowspan="1">Rmg_Api.CreateProjectUsingPOJO</td><td><a href="#m6">createP</a></td><td rowspan="1">1661154335747</td><td rowspan="1">85</td></tr><tr class="passedeven"><td rowspan="1">Rmg_Api.DuplicateTest</td><td><a href="#m7">duplicaTest</a></td><td rowspan="1">1661154335970</td><td rowspan="1">66</td></tr><tr class="passedodd"><td rowspan="1">Rmg_Api.GetSingleProjectTest</td><td><a href="#m8">getSingleProject</a></td><td rowspan="1">1661154336040</td><td rowspan="1">40</td></tr><tr class="passedeven"><td rowspan="1">Rmg_Api.UpdateProjectTest</td><td><a href="#m9">updateProject</a></td><td rowspan="1">1661154336092</td><td rowspan="1">51</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">EndToEndScenario.CreateProjectGetAndVerifyInDB#createP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">Rmg_Api.DeleteProjectTest#deleteP</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: &apos;void org.hamcrest.Matcher.describeMismatch(java.lang.Object, org.hamcrest.Description)&apos;
+	at io.restassured.internal.util.MatcherErrorMessageBuilder.buildError(MatcherErrorMessageBuilder.java:35)
+	at io.restassured.internal.util.MatcherErrorMessageBuilder$buildError.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validateStatusCodeAndStatusLine(ResponseSpecificationImpl.groovy:549)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at Rmg_Api.DeleteProjectTest.deleteP(DeleteProjectTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Rmg_Api.CreateProjectGetAndVerifyInDB#createP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Rmg_Api.CreateProjectTest#createProjectTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Rmg_Api.CreateProjectUisngJSONOBect#createP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Rmg_Api.CreateProjectUsingHashmap#createP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Rmg_Api.CreateProjectUsingJSONFile#createP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Rmg_Api.CreateProjectUsingPOJO#createP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Rmg_Api.DuplicateTest#duplicaTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Rmg_Api.GetSingleProjectTest#getSingleProject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Rmg_Api.UpdateProjectTest#updateProject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

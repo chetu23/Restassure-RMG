@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\MavenProjects\SDET35-RestAssuredFW\testng.xml</span>
+                    <span>C:\Users\Harshith\git\SDET-35-RestAssured\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Rmg_Api.DeleteProjectTest" class="method navigator-link" hash-for-method="deleteP">deleteP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +118,47 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="EndToEndScenario.CreateProjectGetAndVerifyInDB" class="method navigator-link" hash-for-method="createP">createP</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Rmg_Api.CreateProjectUsingPOJO" class="method navigator-link" hash-for-method="createP">createP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Rmg_Api.CreateProjectGetAndVerifyInDB" class="method navigator-link" hash-for-method="createP">createP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Rmg_Api.CreateProjectUsingHashmap" class="method navigator-link" hash-for-method="createP">createP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Rmg_Api.CreateProjectUsingJSONFile" class="method navigator-link" hash-for-method="createP">createP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Rmg_Api.CreateProjectUisngJSONOBect" class="method navigator-link" hash-for-method="createP">createP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Rmg_Api.CreateProjectTest" class="method navigator-link" hash-for-method="createProjectTest">createProjectTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Rmg_Api.DuplicateTest" class="method navigator-link" hash-for-method="duplicaTest">duplicaTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Rmg_Api.GetSingleProjectTest" class="method navigator-link" hash-for-method="getSingleProject">getSingleProject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Rmg_Api.UpdateProjectTest" class="method navigator-link" hash-for-method="updateProject">updateProject</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -119,10 +173,177 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Rmg_Api.DeleteProjectTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteP">
+                  </a> <!-- deleteP -->
+                  <span class="method-name">deleteP</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: &apos;void org.hamcrest.Matcher.describeMismatch(java.lang.Object, org.hamcrest.Description)&apos;
+	at io.restassured.internal.util.MatcherErrorMessageBuilder.buildError(MatcherErrorMessageBuilder.java:35)
+	at io.restassured.internal.util.MatcherErrorMessageBuilder$buildError.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validateStatusCodeAndStatusLine(ResponseSpecificationImpl.groovy:549)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at Rmg_Api.DeleteProjectTest.deleteP(DeleteProjectTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">EndToEndScenario.CreateProjectGetAndVerifyInDB</span>
+              <span class="class-name">Rmg_Api.CreateProjectUsingPOJO</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createP">
+                  </a> <!-- createP -->
+                  <span class="method-name">createP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Rmg_Api.DuplicateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="duplicaTest">
+                  </a> <!-- duplicaTest -->
+                  <span class="method-name">duplicaTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Rmg_Api.CreateProjectUsingHashmap</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createP">
+                  </a> <!-- createP -->
+                  <span class="method-name">createP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Rmg_Api.CreateProjectUisngJSONOBect</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createP">
+                  </a> <!-- createP -->
+                  <span class="method-name">createP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Rmg_Api.UpdateProjectTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateProject">
+                  </a> <!-- updateProject -->
+                  <span class="method-name">updateProject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Rmg_Api.CreateProjectTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createProjectTest">
+                  </a> <!-- createProjectTest -->
+                  <span class="method-name">createProjectTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Rmg_Api.CreateProjectUsingJSONFile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createP">
+                  </a> <!-- createP -->
+                  <span class="method-name">createP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Rmg_Api.GetSingleProjectTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSingleProject">
+                  </a> <!-- getSingleProject -->
+                  <span class="method-name">getSingleProject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Rmg_Api.CreateProjectGetAndVerifyInDB</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -137,7 +358,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\MavenProjects\SDET35-RestAssuredFW\testng.xml</span>
+            <span class="header-content">C:\Users\Harshith\git\SDET-35-RestAssured\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +367,16 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;EndToEndScenario.CreateProjectGetAndVerifyInDB&quot;/&gt;
+      &lt;class name=&quot;Rmg_Api.CreateProjectGetAndVerifyInDB&quot;/&gt;
+      &lt;class name=&quot;Rmg_Api.CreateProjectTest&quot;/&gt;
+      &lt;class name=&quot;Rmg_Api.CreateProjectUisngJSONOBect&quot;/&gt;
+      &lt;class name=&quot;Rmg_Api.CreateProjectUsingHashmap&quot;/&gt;
+      &lt;class name=&quot;Rmg_Api.CreateProjectUsingJSONFile&quot;/&gt;
+      &lt;class name=&quot;Rmg_Api.CreateProjectUsingPOJO&quot;/&gt;
+      &lt;class name=&quot;Rmg_Api.DeleteProjectTest&quot;/&gt;
+      &lt;class name=&quot;Rmg_Api.DuplicateTest&quot;/&gt;
+      &lt;class name=&quot;Rmg_Api.GetSingleProjectTest&quot;/&gt;
+      &lt;class name=&quot;Rmg_Api.UpdateProjectTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -160,7 +390,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (10 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,16 +416,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createP')
-data.setCell(0, 2, 'EndToEndScenario.CreateProjectGetAndVerifyInDB')
-data.setCell(0, 3, 1561);
+data.setCell(0, 2, 'Rmg_Api.CreateProjectGetAndVerifyInDB')
+data.setCell(0, 3, 3229);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createP')
+data.setCell(1, 2, 'Rmg_Api.CreateProjectUsingJSONFile')
+data.setCell(1, 3, 129);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createProjectTest')
+data.setCell(2, 2, 'Rmg_Api.CreateProjectTest')
+data.setCell(2, 3, 127);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createP')
+data.setCell(3, 2, 'Rmg_Api.CreateProjectUsingHashmap')
+data.setCell(3, 3, 122);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'deleteP')
+data.setCell(4, 2, 'Rmg_Api.DeleteProjectTest')
+data.setCell(4, 3, 121);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'createP')
+data.setCell(5, 2, 'Rmg_Api.CreateProjectUisngJSONOBect')
+data.setCell(5, 3, 102);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'createP')
+data.setCell(6, 2, 'Rmg_Api.CreateProjectUsingPOJO')
+data.setCell(6, 3, 85);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'duplicaTest')
+data.setCell(7, 2, 'Rmg_Api.DuplicateTest')
+data.setCell(7, 3, 66);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'updateProject')
+data.setCell(8, 2, 'Rmg_Api.UpdateProjectTest')
+data.setCell(8, 3, 51);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getSingleProject')
+data.setCell(9, 2, 'Rmg_Api.GetSingleProjectTest')
+data.setCell(9, 3, 40);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -210,9 +476,90 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">18 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Rmg_Api.CreateProjectUsingPOJO</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bsConfig</span>
+                <br/>
+                <span class="ignored-method-name">asConfig</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Rmg_Api.DuplicateTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bsConfig</span>
+                <br/>
+                <span class="ignored-method-name">asConfig</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Rmg_Api.DeleteProjectTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bsConfig</span>
+                <br/>
+                <span class="ignored-method-name">asConfig</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Rmg_Api.CreateProjectUsingHashmap</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bsConfig</span>
+                <br/>
+                <span class="ignored-method-name">asConfig</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Rmg_Api.CreateProjectUisngJSONOBect</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bsConfig</span>
+                <br/>
+                <span class="ignored-method-name">asConfig</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Rmg_Api.UpdateProjectTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bsConfig</span>
+                <br/>
+                <span class="ignored-method-name">asConfig</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Rmg_Api.CreateProjectUsingJSONFile</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bsConfig</span>
+                <br/>
+                <span class="ignored-method-name">asConfig</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Rmg_Api.CreateProjectTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bsConfig</span>
+                <br/>
+                <span class="ignored-method-name">asConfig</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Rmg_Api.GetSingleProjectTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">bsConfig</span>
+                <br/>
+                <span class="ignored-method-name">asConfig</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -221,18 +568,86 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">EndToEndScenario.CreateProjectGetAndVerifyInDB</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Rmg_Api.CreateProjectGetAndVerifyInDB</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">bsConfig</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">createP</span>
-                <span class="method-start">955 ms</span>
+                <span class="method-start">1526 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Rmg_Api.CreateProjectTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createProjectTest</span>
+                <span class="method-start">4777 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Rmg_Api.CreateProjectUisngJSONOBect</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createP</span>
+                <span class="method-start">4913 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Rmg_Api.CreateProjectUsingHashmap</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createP</span>
+                <span class="method-start">5017 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Rmg_Api.CreateProjectUsingJSONFile</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createP</span>
+                <span class="method-start">5142 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Rmg_Api.CreateProjectUsingPOJO</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createP</span>
+                <span class="method-start">5281 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Rmg_Api.DeleteProjectTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteP</span>
+                <span class="method-start">5377 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Rmg_Api.DuplicateTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">duplicaTest</span>
+                <span class="method-start">5504 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Rmg_Api.GetSingleProjectTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getSingleProject</span>
+                <span class="method-start">5574 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Rmg_Api.UpdateProjectTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">updateProject</span>
+                <span class="method-start">5626 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Rmg_Api.CreateProjectGetAndVerifyInDB</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">asConfig</span>
-                <span class="method-start">2542 ms</span>
+                <span class="method-start">5782 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

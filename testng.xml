@@ -3,7 +3,16 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="EndToEndScenario.CreateProjectGetAndVerifyInDB"/>
+      <class name="Rmg_Api.CreateProjectGetAndVerifyInDB"/>
+      <class name="Rmg_Api.CreateProjectTest"/>
+      <class name="Rmg_Api.CreateProjectUisngJSONOBect"/>
+      <class name="Rmg_Api.CreateProjectUsingHashmap"/>
+      <class name="Rmg_Api.CreateProjectUsingJSONFile"/>
+      <class name="Rmg_Api.CreateProjectUsingPOJO"/>
+      <class name="Rmg_Api.DeleteProjectTest"/>
+      <class name="Rmg_Api.DuplicateTest"/>
+      <class name="Rmg_Api.GetSingleProjectTest"/>
+      <class name="Rmg_Api.UpdateProjectTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

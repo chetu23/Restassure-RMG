@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  * This class contains java specific generic methods
- * @author Chaitra M
+ * @author Chetan
  *
  */
 public class JavaLibrary {

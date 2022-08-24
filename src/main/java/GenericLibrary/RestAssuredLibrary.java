@@ -4,7 +4,7 @@ import io.restassured.response.Response;
 
 /**
  * this class contains generic methods related to rest assured
- * @author Chaitra M
+ * @author Chetan 
  *
  */
 public class RestAssuredLibrary {

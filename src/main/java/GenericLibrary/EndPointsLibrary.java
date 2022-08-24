@@ -2,7 +2,7 @@ package GenericLibrary;
 
 /**
  * This interface constins all the endpoints
- * @author Chaitra M
+ * @author Chetan
  *
  */
 public interface EndPointsLibrary {
@@ -12,5 +12,6 @@ public interface EndPointsLibrary {
 	String UpdateProject = "/projects/";
 	String DeleteProject = "/projects/";
 	String GetSingleProject = "/projects/{pid}";
+	String SingleProject="/projects/";
 
 }

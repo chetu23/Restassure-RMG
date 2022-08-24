@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.*;
 
 /**
  * This is the base class where all API testscripts extend from 
- * @author Chaitra M
+ * @author Chetan
  *
  */
 public class BaseAPIClass {
